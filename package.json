@@ -1,0 +1,19 @@
+{
+  "name": "mishka-adaptive",
+  "version": "1.0.0",
+  "description": "Mishka adaptive site for education",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvbrocs/mishka-adaptive.git"
+  },
+  "author": "Maxim Belov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvbrocs/mishka-adaptive/issues"
+  },
+  "homepage": "https://github.com/mvbrocs/mishka-adaptive#readme"
+}
