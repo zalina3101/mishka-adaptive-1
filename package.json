@@ -1,23 +1,8 @@
 {
   "name": "mishka-adaptive",
   "version": "1.0.0",
+  "private": true,
   "description": "Mishka adaptive site for education",
-  // "main": "gulpfile.js",
-  "scripts": {
-    "build": "gulp build",
-    "start": "npm run build && gulp serve"
-    // "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mvbrocs/mishka-adaptive.git"
-  },
-  "author": "Maxim Belov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mvbrocs/mishka-adaptive/issues"
-  },
-  "homepage": "https://github.com/mvbrocs/mishka-adaptive#readme",
   "devDependencies": {
     "autoprefixer": "^6.6.1",
     "browser-sync": "^2.18.6",
@@ -33,5 +18,20 @@
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
     "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "6.7"
   }
 }
