@@ -44,8 +44,7 @@ gulp.task("serve", function() {
 	});
 
 	gulp.watch("less/**/*.less", ["style"]);
-	gulp.watch("*.html")
-    .on("change", server.reload);
+	gulp.watch("*.html").on("change", server.reload);
 });
 
 gulp.task("images", function() {

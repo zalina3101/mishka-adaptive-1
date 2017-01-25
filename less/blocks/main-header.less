@@ -1,12 +1,22 @@
+@import "../variables.less";
+
 .main-header__background {
   background-image: url("../../img/hero-mobile@1x.jpg");
 }
 
 .main-header__item-interior {
-  background-color: #63d1bb;
+  background-color: @main-header;
 }
 
 .main-header__item-interior span {
   background-image: url("../../img/icon-interior.svg");
+}
+
+.main-header__item-toys {
+  background-color: @main-header-darken;
+}
+
+.main-header__item-toys span {
+  background-image: url("../../img/icon-toy.svg")
 }
 
