@@ -2,6 +2,13 @@
 @import "../mixins.less";
 
 .main-header {
+  position: relative;
+  z-index: 1;
+  min-height: 505px;
+  background-color: #ffffff;
+}
+
+.main-header__wrapper {
   .container();
 }
 
@@ -9,16 +16,14 @@
   background-image: url("../../img/hero-mobile@1x.jpg");
 }
 
-.main-header__wrap {
-  .wrapper();
-}
-
 .main-header__title {
+  width: 240px;
   color: @main-header-title;
   font-family: Verdana, Arial, sans-serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
+  text-align: center;
 }
 
 .main-header__item-interior {
