@@ -2,15 +2,14 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mishka</title>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
 	<header class="page-header">
-
-		<div class="page-header__wrap">
 
       <div class="page-header__logo">
 
@@ -20,31 +19,38 @@
 
       <nav class="main-nav  main-nav--closed">
 
-        <button class="main-nav__toggle  js-nav-toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle  js-nav-toggle" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+          Открыть меню
+        </button>
 
-        <ul class="main-nav__items">
+        <div class="main-nav__wrap">
 
-          <li class="main-nav__item">
-            <a href="#">Каталог товаров</a>
-          </li>
+          <ul class="main-nav__items">
 
-          <li class="main-nav__item">
-            <a href="#">Вязание на заказ</a>
-          </li>
+            <li class="main-nav__item">
+              <a href="#">Каталог товаров</a>
+            </li>
 
-          <li class="main-nav__item">
-            <a href="#"><span class="nav-icon-search"></span>Поиск по сайту</a>
-          </li>
+            <li class="main-nav__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
 
-          <li class="main-nav__item">
-            <a href="#"><span class="nav-icon-basket"></span>Корзина</a>
-          </li>
+            <li class="main-nav__item">
+              <a href="#"><span class="nav-icon-search"></span>Поиск по сайту</a>
+            </li>
 
-        </ul>
+            <li class="main-nav__item">
+              <a href="#"><span class="nav-icon-basket"></span>Корзина</a>
+            </li>
+
+          </ul>
+
+        </div>
 
       </nav>
-
-    </div>
 
 	</header>
 
@@ -309,6 +315,12 @@
 		</div>
 
 	</footer>
+
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
