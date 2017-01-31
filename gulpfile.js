@@ -63,7 +63,7 @@ gulp.task("symbols", function() {
 			inlineSvg: true
 		}))
 		.pipe(rename("symbols.svg"))
-		.pipe(gulp.dest("build/img"));
+		.pipe(gulp.dest("build/img/sprites"));
 });
 
 gulp.task("build", function(fn) {

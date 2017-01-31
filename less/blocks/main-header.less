@@ -10,12 +10,15 @@
 
 .main-header__wrapper {
   .container();
+  background-color: @main-header-hero-bg;
 }
 
 .main-header__background {
   box-sizing: border-box;
-  background: url("../../img/hero-mobile@2x.jpg") no-repeat 50% 50%;
+  background: url("../../img/hero-mobile@2x.jpg") no-repeat 50% 0%;
   background-size: 180%;
+  margin: 0 auto;
+  width: 320px;
   height: 300px;
   padding-top: 88px;
 }
@@ -35,6 +38,11 @@
   background-color: @main-header;
 
   h3 {
+    width: 100px;
+    margin: 0;
+    padding-left: 8.7%;
+    padding-top: 29px;
+    padding-bottom: 27px;
     color: #ffffff;
     font-family: Tahoma, Arial, sans-serif;
     font-size: 18px;
@@ -50,6 +58,11 @@
   background-color: @main-header-darken;
 
   h3 {
+    width: 100px;
+    margin: 0;
+    padding-left: 8.7%;
+    padding-top: 29px;
+    padding-bottom: 27px;
     color: #ffffff;
     font-family: Tahoma, Arial, sans-serif;
     font-size: 18px;
