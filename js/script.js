@@ -1,5 +1,6 @@
 
 var navMenu   = document.querySelector(".main-nav__items");
+var svgMain = document.querySelector("svg");
 
 $(".js-nav-toggle").on("click", function() {
   $(this).toggleClass("main-nav__toggle--opened");
