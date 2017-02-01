@@ -70,7 +70,7 @@
 
 @keyframes show-menu {
   from {height: 0;}
-  to {height: 338px;}
+  to {height: 340px;}
 }
 
 @keyframes hide-menu {
@@ -86,6 +86,42 @@
 }
 
 .main-nav__item {
+
+  &--search {
+    position: relative;
+
+    &:hover {
+
+      svg {
+        fill: @main-header;
+      }
+    }
+
+    &:active {
+
+      svg {
+        fill: @green-light;
+      }
+    }
+  }
+
+  &--basket {
+    position: relative;
+
+    &:hover {
+
+      svg {
+        fill: @main-header;
+      }
+    }
+
+    &:active {
+
+      svg {
+        fill: @green-light;
+      }
+    }
+  }
 
   a {
     box-sizing: border-box;
@@ -103,4 +139,18 @@
     border-bottom: 1px solid @main-nav-border;
   }
 
+}
+
+.main-nav__icon-search {
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  fill: @icon-gray;
+}
+
+.main-nav__icon-basket {
+  position: absolute;
+  top: 33px;
+  left: 10%;
+  fill: @icon-gray;
 }
