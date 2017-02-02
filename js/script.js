@@ -1,8 +1,8 @@
 
 var navMenu   = document.querySelector(".main-nav__items");
-var svgMain = document.querySelector("svg");
+// var svgMain = document.querySelector("svg");
 
-svgMain.style.display = "none";
+// svgMain.style.display = "none";
 
 $(".js-nav-toggle").on("click", function() {
   $(this).toggleClass("main-nav__toggle--opened");

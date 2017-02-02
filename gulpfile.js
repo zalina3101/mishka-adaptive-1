@@ -14,6 +14,7 @@ var svgmin       = require("gulp-svgmin");
 var svgstore     = require("gulp-svgstore");
 var run          = require("run-sequence");
 var del          = require("del");
+var cheerio      = require("gulp-cheerio");
 
 gulp.task("style", function() {
 	gulp.src("less/style.less")
@@ -62,6 +63,12 @@ gulp.task("symbols", function() {
 		.pipe(svgstore({
 			inlineSvg: true
 		}))
+    .pipe(cheerio({
+            run: function ($) {
+                $('svg').attr('style',  'display:none');
+            },
+            parserOptions: { xmlMode: true }
+        }))
 		.pipe(rename("symbols.svg"))
 		.pipe(gulp.dest("build/img/sprites"));
 });

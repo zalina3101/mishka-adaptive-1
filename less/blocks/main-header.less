@@ -53,10 +53,40 @@
 
 .main-header__item--interior {
   background-color: @main-header;
+
+  &:hover {
+    background-color: @interior-bg-hover;
+    .main-header__icon-interior {
+      fill: @interior-i-hover;
+    }
+  }
+
+  &:active {
+    background-color: @interior-bg-hover;
+    .main-header__icon-interior {
+      fill: @interior-i-active;
+    }
+  }
 }
 
 .main-header__item--toys {
   background-color: @main-header-darken;
+
+  &:hover {
+    background-color: @toys-bg-hover;
+    .main-header__icon-toys {
+      fill: @toys-i-hover;
+    }
+  }
+
+  &:active {
+    background-color: @toys-bg-hover;
+    .main-header__icon-toys {
+      fill: @toys-i-active;
+    }
+  }
+
+
 }
 
 .main-header__icon-interior {
