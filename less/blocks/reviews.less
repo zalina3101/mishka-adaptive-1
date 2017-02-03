@@ -2,9 +2,14 @@
 
 .reviews__wrap {
   .container();
+  box-sizing: border-box;
+  padding-left: 9.3%;
+  padding-right: 9.3%;
 }
 
 .reviews__title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: #000000;
   font-family: Verdana, Arial, sans-serif;
   font-size: 24px;
@@ -14,9 +19,11 @@
 
 .reviews__list {
   .reset-list();
+  margin-bottom: 10px;
 }
 
 .reviews__text {
+  margin: 0;
   color: @featured-desc;
   font-family: OpenSans, Arial, sans-serif;
   font-size: 14px;
@@ -39,3 +46,44 @@
   font-size: 14px;
   line-height: 30px;
 }
+
+.reviews__slider-btns {
+  font-size: 0;
+  margin-bottom: 38px;
+}
+
+.reviews__slider-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  width: 128px;
+  line-height: 50px;
+  border: 1px solid @main-nav-border;
+
+  &::before {
+    position: absolute;
+    top: 23px;
+    left: 37px;
+    width: 50px;
+    content: "";
+    height: 5px;
+    background-color: #000000;
+  }
+
+  &--prev::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    border: 5px solid #000000;
+  }
+
+  &--next {
+    border-left-width: 0;
+  }
+}
+
+
