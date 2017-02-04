@@ -210,7 +210,7 @@
           <a href="#" class="reviews__slider-btn reviews__slider-btn--next">Вперед</a>
         </div>
 
-        <a href="#" class="button">Написать</a>
+        <a href="#" class="button  button--reviews">Написать</a>
 
 			</div>
 
@@ -224,25 +224,28 @@
 
 				<h2 class="contacts__title">Контакты</h2>
 
-				<table class="contacts__information">
+				<table class="contacts__informations">
 
 					<tr>
-						<td>e-mail:</td>
-						<td class="contacts__email">info@mimimishkashop.ru</td>
+						<td class="contacts__information-option">e-mail:</td>
+						<td class="contacts__information-value  contacts__information-value--email">
+              <a href="#">info@mimimishkashop.ru</a>
+            </td>
 					</tr>
 
 					<tr>
-						<td>адрес:</td>
-						<td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+						<td class="contacts__information-option">адрес:</td>
+						<td class="contacts__information-value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
 					</tr>
 
 				</table>
+      </div>
 
-				<div class="contacts__map"></div>
+			<div class="contacts__map" id="google-map"></div>
 
-				<a href="#" class="button">Напишите нам</a>
-
-			</div>
+			<div class="contacts__wrap">
+        <a href="#" class="button button--contacts">Напишите нам</a>
+      </div>
 
 		</section>
 
@@ -253,16 +256,31 @@
 		<div class="page-footer__wrap">
 
 			<div class="page-footer__social">
-				<a href="#" class="page-footer__icon page-footer__icon--instagram">Instagram</a>
-				<a href="#" class="page-footer__icon page-footer__icon--facebook">Facebook</a>
-				<a href="#" class="page-footer__icon page-footer__icon--twitter">Twitter</a>
+				<a href="#" class="page-footer__icon page-footer__icon--instagram">
+          <svg width="22" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use></svg>
+          Instagram
+        </a>
+
+				<a href="#" class="page-footer__icon page-footer__icon--facebook">
+          <svg width="15" height="28"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use></svg>
+          Facebook
+        </a>
+
+        <a href="#" class="page-footer__icon page-footer__icon--twitter">
+          <svg width="23" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+          Twitter
+        </a>
+
+        <hr class="simple-delimiter">
+
 			</div>
 
-			<hr class="simple-delimiter">
-
 			<div class="page-footer__developer">
-				<b class="page-footer__developer-title">Разработано</b>
-				<a class="page-footer__developer-logo" href="#">htmlAcademy</a>
+				<a class="page-footer__developer-logo" href="#">
+          <b class="page-footer__developer-title">Разработано</b>
+          <svg width="27" height="34"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use></svg>
+          htmlAcademy
+        </a>
 			</div>
 
 		</div>
@@ -275,5 +293,7 @@
     crossorigin="anonymous"></script>
   <script src="js/svg-sptite-script.js" defer></script>
   <script src="js/script.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/gmap.js"></script>
 </body>
 </html>

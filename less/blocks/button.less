@@ -17,8 +17,29 @@
   text-transform: uppercase;
   text-decoration: none;
   outline: none;
+  transition: color 0.5s, background-color 0.5s;
 
   &--featured {
     margin-bottom: 35px;
+  }
+
+  &--reviews {
+    margin-bottom: 45px;
+  }
+
+  &--contacts {
+    margin-bottom: 40px;
+    padding-left: 18.4%;
+    padding-right: 18.4%;
+  }
+
+  &:hover {
+    background-color: @featured-desc;
+    color : #ffffff;
+  }
+
+  &:active {
+    background-color: @featured-desc;
+    color : @featured-desc-lighter;
   }
 }
