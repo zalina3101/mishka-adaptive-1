@@ -1,5 +1,9 @@
 
 var navMenu   = document.querySelector(".main-nav__items");
+// var mqT = window.matchMedia( "(min-width: 768px)" ); // mq for tablet width
+// var logoImg = document.querySelector(".page-header__logo img");
+
+// Main nav Toggle
 
 $(".js-nav-toggle").on("click", function() {
   $(this).toggleClass("main-nav__toggle--opened");
@@ -17,3 +21,9 @@ $(".js-nav-toggle").on("click", function() {
     }
   }
 });
+
+//Change Logo at tablet width
+
+// if (mqT.matches) {
+//   logoImg.src = "../img/logo-tablet.svg"
+// }

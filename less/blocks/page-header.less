@@ -2,6 +2,11 @@
 
 .page-header__wrapper {
   .container();
+  margin: none;
+
+  @media @tablet-width {
+      .clearfix();
+    }
 }
 
 .page-header__logo {
@@ -9,12 +14,32 @@
   padding-bottom: 22px;
   border-bottom: 1px solid @main-nav-border;
 
+  @media @tablet-width {
+      position: relative;
+      float: left;
+      width: 48.3%;
+      height: 46px;
+      margin-right: 51.7%;
+      border-right: 1px solid @main-nav-border;
+  }
 
   img {
     display: block;
     width: 86px;
     height: 35px;
     margin: 0 auto;
+
+    @media @tablet-width {
+      position: absolute;
+      top: 22px;
+      left: 50px;
+      width: 113px;
+      height: 46px;
+    }
+  }
+
+  @media @tablet-width {
+
   }
 }
 
