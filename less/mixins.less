@@ -16,13 +16,15 @@
 
 .container() {
   min-width: 320px;
+  max-width: 550px;
   margin: 0 auto;
 
   @media @tablet-width {
     min-width: 668px;
+    max-width: 1049px;
   }
 
   @media @desktop-width {
-    width: 1050px;
+    min-width: 1050px;
   }
 }

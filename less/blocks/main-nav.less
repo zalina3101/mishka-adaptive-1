@@ -17,13 +17,13 @@
     float: left;
     position: static;
     width: 100%;
+    background-color: #fafafa;
   }
 }
 
 .main-nav__wrap {
 
   @media @tablet-width {
-    // .container();
     .clearfix();
   }
 }
@@ -98,6 +98,7 @@
 
 .main-nav__items {
   .container();
+  max-width: none;
   .reset-list();
   position: relative;
   z-index: 0;
@@ -110,6 +111,37 @@
 }
 
 .main-nav__item {
+
+    a {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 23.75%;
+    display: inline-block;
+    color: #000000;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    text-decoration: none;
+    border-bottom: 1px solid @main-nav-border;
+    transition: color 0.3s;
+
+    @media @tablet-width {
+      display: block;
+      padding-top: 33px;
+      padding-bottom: 33px;
+    }
+  }
+
+  svg {
+    transition: fill 0.3s;
+  }
+
+  @media @tablet-width {
+    float: left;
+  }
 
   &:hover {
     a {
@@ -153,7 +185,6 @@
 
       @media @tablet-width {
         display: block;
-        padding: 0;
         font-size: 0;
       }
     }
@@ -203,7 +234,10 @@
       @media @tablet-width {
         padding: 0;
         padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         font-size: 14px;
+        border: none;
       }
     }
   }
@@ -217,42 +251,26 @@
     a {
       @media @tablet-width {
         font-size: 14px;
-        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
         padding-left: 18px;
+        border: none;
       }
     }
 
   }
 
-  a {
-    box-sizing: border-box;
-    width: 100%;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 23.75%;
-    display: inline-block;
-    color: #000000;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 24px;
-    text-decoration: none;
-    border-bottom: 1px solid @main-nav-border;
-    transition: color 0.3s;
+  &--delivery {
+    display: none;
 
     @media @tablet-width {
       display: block;
-      padding-top: 33px;
-      padding-bottom: 33px;
+      padding-top: 20px;
+      padding-left: 15.6%;
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
     }
-  }
-
-  svg {
-    transition: fill 0.3s;
-  }
-
-  @media @tablet-width {
-    float: left;
   }
 
 }
@@ -273,7 +291,11 @@
 
 .main-nav__icon-basket {
   position: absolute;
-  top: 33px;
+  top: 31px;
   left: 10%;
   fill: @icon-gray;
+
+  @media @tablet-width {
+    top: 35px;
+  }
 }
