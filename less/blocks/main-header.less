@@ -5,7 +5,7 @@
   position: relative;
   z-index: 1;
   min-height: 505px;
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 
 .main-header__wrapper {
@@ -13,8 +13,22 @@
   background-color: @main-header-hero-bg;
 
   @media @tablet-width {
-    // position: relative;
-    // z-index: 1;
+    position: relative;
+  }
+
+  &::before {
+    @media @tablet-width {
+      position: absolute;
+      z-index: 3;
+      bottom: 0;
+      left: 0;
+      content: "";
+      height: 15px;
+      width: 100%;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+    }
   }
 }
 
@@ -30,7 +44,7 @@
     background-position: 50% -64px;
     background-size: 1150px 746px;
     height: 565px;
-    padding-top: 92px;
+    padding-top: 90px;
   }
 }
 
@@ -52,6 +66,15 @@
   }
 }
 
+.main-header__items {
+  @media @tablet-width {
+    .clearfix();
+    width: 87%;
+    margin: 0 auto;
+    padding-bottom: 1px;
+  }
+}
+
 .main-header__item {
   position: relative;
 
@@ -59,14 +82,38 @@
     width: 100px;
     margin: 0;
     padding-left: 8.7%;
-    padding-top: 29px;
+    padding-top: 28px;
     padding-bottom: 27px;
     color: #ffffff;
     font-family: Tahoma, Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
+
+
+    @media @tablet-width {
+      width: 120px;
+      font-size: 20px;
+      line-height: 30px;
+      transform-origin: bottom;
+      transition: transform 0.3s;
+    }
   }
 
+  @media @tablet-width {
+    float: left;
+    width: 50%;
+    transform-origin: bottom;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scaleY(1.0434);
+    }
+
+    &:hover h3 {
+      transform: scaleY(0.9586);
+    }
+
+  }
 }
 
 .main-header__item--interior {
@@ -114,12 +161,16 @@
   right: 36px;
   fill: @interior;
   transition: fill 0.3s;
+
+  @media @tablet-width {
+    top: 30px;
+  }
 }
 
 .main-header__icon-toys {
   position: absolute;
-  top: 21px;
-  right: 27px;
+  top: 31px;
+  right: 33px;
   fill: @toys;
   transition: fill 0.3s;
 }
