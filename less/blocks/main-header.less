@@ -94,8 +94,6 @@
       width: 120px;
       font-size: 20px;
       line-height: 30px;
-      transform-origin: bottom;
-      transition: transform 0.3s;
     }
   }
 
@@ -109,11 +107,23 @@
       transform: scaleY(1.0434);
     }
 
-    &:hover h3 {
+    &:hover .main-header__item-wrapper {
+      top: -5px;
       transform: scaleY(0.9586);
     }
 
   }
+}
+
+.main-header__item-wrapper {
+
+    @media @tablet-width {
+      position: relative;
+      top: 0;
+      transform-origin: bottom;
+      transition: transform 0.3s, top 0.3s;
+    }
+
 }
 
 .main-header__item--interior {
