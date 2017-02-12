@@ -21,10 +21,28 @@
 
   &--featured {
     margin-bottom: 35px;
+
+    @media @tablet-width {
+      float: left;
+      width: auto;
+      padding-left: 15.5%;
+      padding-right: 15.5%;
+      margin-bottom: 55px;
+    }
   }
 
   &--reviews {
     margin-bottom: 45px;
+
+    @media @tablet-width {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: auto;
+      margin-right: 6.5%;
+      padding-left: 5.4%;
+      padding-right: 5.4%;
+    }
   }
 
   &--contacts {

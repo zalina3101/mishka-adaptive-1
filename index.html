@@ -133,9 +133,11 @@
 
 				</table>
 
-				<figure class="featured__img">
-					<img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
-				</figure>
+				<picture class="featured__img">
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+					<img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" width="260" height="315" alt="Вязаные корзинки">
+				</picture>
 
 				<b class="featured__price">Цена: 990 руб.</b>
 
@@ -155,35 +157,39 @@
 
 				<ul class="about__items">
 
-					<li class="about__item">
-						<svg class="about__icon-feature-1" width="32" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-1"></use></svg>
-						<h3>Экологически чистые<br> материалы</h3>
-					</li>
+					<div class="about__items-wrapper">
+            <li class="about__item">
+              <svg class="about__icon-feature-1" width="32" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-1"></use></svg>
+              <h3>Экологически чистые<br> материалы</h3>
+            </li>
 
-					<li class="about__item">
-						<svg class="about__item-icon" width="47" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-3"></use></svg>
-						<h3>Скандинавский стиль<br> по российской цене</h3>
-					</li>
+            <li class="about__item">
+              <svg class="about__item-icon" width="47" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-3"></use></svg>
+              <h3>Скандинавский стиль<br> по российской цене</h3>
+            </li>
 
-					<li class="about__item">
-						<svg class="about__icon-feature-3" width="34" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-5"></use></svg>
-						<h3>Увеличивает лайки<br> на фотографиях</h3>
-					</li>
+            <li class="about__item">
+              <svg class="about__icon-feature-3" width="34" height="27"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-5"></use></svg>
+              <h3>Увеличивает лайки<br> на фотографиях</h3>
+            </li>
+          </div>
 
-					<li class="about__item">
-						<svg class="about__icon-feature-4" width="35" height="34"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-2"></use></svg>
-						<h3>Связано вручную с<br> любовью и умилением</h3>
-					</li>
+					<div class="about__items-wrapper">
+            <li class="about__item">
+              <svg class="about__icon-feature-4" width="35" height="34"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-2"></use></svg>
+              <h3>Связано вручную с<br> любовью и умилением</h3>
+            </li>
 
-					<li class="about__item">
-						<svg class="about__icon-feature-5" width="55" height="23"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-4"></use></svg>
-						<h3>Поддержка отечественного<br> производителя</h3>
-					</li>
+            <li class="about__item">
+              <svg class="about__icon-feature-5" width="55" height="23"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-4"></use></svg>
+              <h3>Поддержка отечественного<br> производителя</h3>
+            </li>
 
-					<li class="about__item">
-						<svg class="about__icon-feature-6" width="33" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-6"></use></svg>
-						<h3>Поставляется в<br> подарочной упаковке</h3>
-					</li>
+            <li class="about__item">
+              <svg class="about__icon-feature-6" width="33" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-6"></use></svg>
+              <h3>Поставляется в<br> подарочной упаковке</h3>
+            </li>
+          </div>
 
 				</ul>
 
@@ -242,14 +248,14 @@
 
 				<table class="contacts__informations">
 
-					<tr>
+					<tr class="contacts__informations-row">
 						<td class="contacts__information-option">e-mail:</td>
 						<td class="contacts__information-value  contacts__information-value--email">
               <a href="#">info@mimimishkashop.ru</a>
             </td>
 					</tr>
 
-					<tr>
+					<tr class="contacts__informations-row">
 						<td class="contacts__information-option">адрес:</td>
 						<td class="contacts__information-value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
 					</tr>

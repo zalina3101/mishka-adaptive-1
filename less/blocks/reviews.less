@@ -1,10 +1,34 @@
 @import "../mixins.less";
 
+.reviews {
+
+  @media @tablet-width {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 350px;
+      height: 457px;
+      background-image: url("../../img/review@1x.jpg");
+    }
+  }
+}
+
 .reviews__wrap {
   .container();
   box-sizing: border-box;
   padding-left: 9.3%;
   padding-right: 9.3%;
+
+  @media @tablet-width {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    padding-bottom: 165px;
+  }
 }
 
 .reviews__title {
@@ -15,20 +39,43 @@
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
+
+  @media @tablet-width {
+    .header-tablet-h2();
+    padding-top: 80px;
+    padding-bottom: 55px;
+    margin-bottom: 0;
+  }
 }
 
 .reviews__list {
   .reset-list();
   margin-bottom: 10px;
+
+  @media @tablet-width {
+    margin-bottom: 0;
+  }
+}
+
+.reviews__item {
+  &:not(:first-child) {
+    display: none;
+  }
 }
 
 .reviews__text {
   margin: 0;
+  padding-bottom: 25px;
   color: @featured-desc;
   font-family: OpenSans, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
+
+  @media @tablet-width {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
 }
 
 .reviews__author {
@@ -38,6 +85,12 @@
   font-weight: bold;
   line-height: 30px;
   font-style: normal;
+
+  @media @tablet-width {
+    font-size: 16px;
+    display: block;
+    padding-bottom: 10px;
+  }
 }
 
 .reviews__author-email {
@@ -45,11 +98,22 @@
   font-family: OpenSans, Arial, sans-serif;
   font-size: 14px;
   line-height: 30px;
+
+  @media @tablet-width {
+    font-size: 16px;
+  }
 }
 
 .reviews__slider-btns {
   font-size: 0;
   margin-bottom: 38px;
+
+  @media @tablet-width {
+    position: absolute;
+    top: 310px;
+    right: 0;
+    margin-right: 6.5%;
+  }
 }
 
 .reviews__slider-btn {
@@ -60,6 +124,11 @@
   width: 128px;
   line-height: 50px;
   border: 1px solid @main-nav-border;
+
+  @media @tablet-width {
+    width: 84px;
+    border: none;
+  }
 
   &:hover::after {
     border-color: @arrow-color-hover;
@@ -94,12 +163,20 @@
     transform: rotate(45deg);
     top: 16px;
     left: 39px;
+
+    @media @tablet-width {
+      left: 20px;
+    }
   }
 
   &--next::after {
     transform: rotate(-135deg);
     top: 16.1px;
     left: 68px;
+
+    @media @tablet-width {
+      left: 47px;
+    }
   }
 
   &--next {
@@ -115,6 +192,17 @@
     height: 4px;
     background-color: @arrow-color;
     transition: background-color 0.3s;
+
+    @media @tablet-width {
+      left: 14px;
+    }
+  }
+
+  &--prev::before {
+
+    @media @tablet-width {
+      left: 21px;
+    }
   }
 }
 
