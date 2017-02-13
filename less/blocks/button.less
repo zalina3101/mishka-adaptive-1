@@ -3,10 +3,9 @@
   box-sizing: border-box;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 27%;
-  padding-right: 27%;
+  padding-left: 23%;
+  padding-right: 23%;
   display: inline-block;
-  width: 100%;
   border: 2px solid @featured-desc;
   color: @featured-desc;
   font-family: OpenSans, Arial, sans-serif;
@@ -20,7 +19,14 @@
   transition: color 0.3s, background-color 0.3s;
 
   &--featured {
+    display: block;
+    box-sizing: content-box;
+    width: 84px;
     margin-bottom: 35px;
+    padding-left: 86px;
+    padding-right: 86px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media @tablet-width {
       float: left;
@@ -32,7 +38,14 @@
   }
 
   &--reviews {
-    margin-bottom: 45px;
+    display: block;
+    box-sizing: content-box;
+    width: 84px;
+    margin-bottom: 35px;
+    padding-left: 86px;
+    padding-right: 86px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media @tablet-width {
       position: absolute;
@@ -47,8 +60,18 @@
 
   &--contacts {
     margin-bottom: 40px;
-    padding-left: 18.4%;
-    padding-right: 18.4%;
+    display: block;
+    box-sizing: content-box;
+    width: 138px;
+    padding-left: 59px;
+    padding-right: 59px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media @tablet-width {
+      margin-bottom: 55px;
+      margin-left: 32.7%;
+    }
   }
 
   &:hover {
