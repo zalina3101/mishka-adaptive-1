@@ -31,8 +31,29 @@
   }
 }
 
-.header-tablet-h2() {
-  font-size: 40px;
-  line-height: 50px;
+.title() {
+
+  @media @tablet-width {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media @desktop-width {
+    font-size: 50px;
+    line-height: 57px;
+  }
+}
+
+.container-padding() {
+
+  @media @tablet-width {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+
+  @media @desktop-width {
+    padding-left: 4.3%;
+    padding-right: 4.3%;
+  }
 }
 

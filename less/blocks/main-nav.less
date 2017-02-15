@@ -108,6 +108,10 @@
     .clearfix();
     position: static;
   }
+
+  @media @desktop-width {
+    max-width: none;
+  }
 }
 
 .main-nav__item {
@@ -132,6 +136,10 @@
       display: block;
       padding-top: 33px;
       padding-bottom: 33px;
+    }
+
+    @media @desktop-width {
+      border-bottom: none;
     }
   }
 
@@ -173,7 +181,6 @@
     }
 
     @media @tablet-width {
-      box-sizing: border-box;
       position: absolute;
       top: 0;
       left: 48.2%;
@@ -181,11 +188,26 @@
       border-right: 1px solid @main-nav-border;
     }
 
+    @media @desktop-width {
+      position: relative;
+      left: 0;
+      width: 7.1%;
+      margin-left: 21.7%;
+      border-left: 1px solid @main-nav-border;
+      border-bottom: 1px solid @main-nav-border;
+    }
+
     a {
 
       @media @tablet-width {
         display: block;
         font-size: 0;
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+
+      @media @desktop-width {
+        padding-left: 0;
       }
     }
   }
@@ -214,11 +236,20 @@
       width: 41%;
     }
 
+    @media @desktop-width {
+      position: relative;
+      left: 0;
+      width: 27.4%;
+      border-bottom: 1px solid @main-nav-border;
+    }
+
     a {
 
       @media @tablet-width {
         box-sizing: border-box;
         display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
         padding-left: 23.75%;
       }
     }
@@ -249,6 +280,7 @@
         padding-left: 20.8%;
         padding-top: 32px;
         padding-bottom: 32px;
+        font-size: 16px;
       }
     }
   }
@@ -261,9 +293,12 @@
 
     @media @desktop-width {
       width: 22.6%;
+      border-left: 1px solid @main-nav-border;
+      border-bottom: 1px solid @main-nav-border;
     }
 
     a {
+
       @media @tablet-width {
         font-size: 14px;
         padding-top: 20px;
@@ -271,8 +306,53 @@
         padding-left: 18px;
         border: none;
       }
+
+      @media @desktop-width {
+        font-size: 16px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 13.4%;
+      }
     }
 
+  }
+
+  &--income {
+    display: none;
+
+    @media @desktop-width {
+      display: block;
+      width: 20.8%;
+    }
+
+    a {
+
+      @media @desktop-width {
+        padding-top: 23px;
+        padding-bottom: 23px;
+        padding-left: 20.8%;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &--sale {
+    display: none;
+
+    @media @desktop-width {
+      display: block;
+      width: 22.6%;
+    }
+
+    a {
+
+      @media @desktop-width {
+        padding-top: 23px;
+        padding-bottom: 23px;
+        padding-left: 13%;
+        font-size: 14px;
+      }
+    }
   }
 
   &--delivery {
@@ -282,7 +362,8 @@
       float: right;
       display: block;
       padding-top: 20px;
-      padding-right: 7.4%;
+      padding-bottom: 20px;
+      padding-right: 6.5%;
       font-family: Verdana, Arial, sans-serif;
       font-size: 14px;
       line-height: 24px;

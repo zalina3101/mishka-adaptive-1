@@ -12,6 +12,8 @@
     padding-right: 6.5%;
     position: relative;
   }
+
+
 }
 
 .featured__header {
@@ -25,6 +27,11 @@
     padding-top: 45px;
     padding-bottom: 55px;
   }
+
+  @media @desktop-width {
+    position: relative;
+    padding-top: 125px;
+  }
 }
 
 .featured__name {
@@ -35,14 +42,20 @@
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
+  .title();
 
   @media @tablet-width {
     display: inline-block;
     vertical-align: top;
     padding-right: 20.9%;
     margin-bottom: 0;
-    font-size: 40px;
-    line-height: 50px;
+  }
+
+  @media @desktop-width {
+    display: block;
+    width: 83.3%;
+    padding-right: 0;
+    padding-left: 16.7%;
   }
 }
 
@@ -60,6 +73,12 @@
     width: 10.1%;
     padding-right: 4.1%;
     padding-top: 13px;
+  }
+
+  @media @desktop-width {
+    position: absolute;
+    top: 127px;
+    left: 0;
   }
 }
 

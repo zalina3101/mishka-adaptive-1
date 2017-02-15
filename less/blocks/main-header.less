@@ -17,6 +17,7 @@
   }
 
   &::before {
+
     @media @tablet-width {
       position: absolute;
       z-index: 3;
@@ -29,6 +30,12 @@
       background-repeat: repeat-x;
       background-size: auto 25px;
     }
+
+    @media @desktop-width {
+      height: 31px;
+      background-size: auto 31px;
+    }
+
   }
 }
 
@@ -57,21 +64,26 @@
   font-weight: bold;
   line-height: 30px;
   text-align: center;
+  .title();
 
   @media @tablet-width {
-    font-size: 40px;
-    line-height: 50px;
     width: auto;
 
   }
 }
 
 .main-header__items {
+
   @media @tablet-width {
     .clearfix();
     width: 87%;
     margin: 0 auto;
   }
+
+  @media @desktop-width {
+    width: 91.3%;
+  }
+
 }
 
 .main-header__item {

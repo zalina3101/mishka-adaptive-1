@@ -9,37 +9,51 @@
 }
 
 .page-header__logo {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  border-top: 1px solid @main-nav-border;
   border-bottom: 1px solid @main-nav-border;
 
   @media @tablet-width {
-      position: relative;
-      float: left;
-      width: 48.3%;
-      height: 46px;
-      margin-right: 51.7%;
-      border-right: 1px solid @main-nav-border;
+    position: relative;
+    float: left;
+    width: 48.3%;
+    border-top: none;
   }
 
   @media @desktop-width {
     position: absolute;
     top: 0;
-    left: 50%;
-    width: 13%;
+    left: 43.4%;
+    width: 21.7%;
     margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  picture {
+    display: block;
+    height: 35px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 36.2%;
+
+    @media @tablet-width {
+      height: 46px;
+      padding-left: 13.5%;
+    }
+
+    @media @desktop-width {
+      height: 72px;
+      padding-top: 9px;
+      padding-bottom: 7px;
+      padding-left: 0;
+    }
   }
 
   img {
-    display: block;
     width: 86px;
     height: 35px;
-    margin: 0 auto;
 
     @media @tablet-width {
-      position: absolute;
-      top: 22px;
-      left: 50px;
       width: 113px;
       height: 46px;
     }
