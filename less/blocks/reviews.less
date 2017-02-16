@@ -21,14 +21,15 @@
 .reviews__wrap {
   .container();
   box-sizing: border-box;
-  padding-left: 9.3%;
-  padding-right: 9.3%;
+  .container-padding();
 
   @media @tablet-width {
     position: relative;
-    padding-left: 6.5%;
-    padding-right: 6.5%;
     padding-bottom: 165px;
+  }
+
+  @media @desktop-width {
+    padding-left: 19.5%;
   }
 }
 
@@ -43,10 +44,14 @@
   .title();
 
   @media @tablet-width {
-
     padding-top: 80px;
     padding-bottom: 55px;
     margin-bottom: 0;
+  }
+
+  @media @desktop-width {
+    padding-top: 75px;
+    padding-bottom: 50px;
   }
 }
 
@@ -77,6 +82,10 @@
   @media @tablet-width {
     font-size: 16px;
     padding-bottom: 20px;
+  }
+
+  @media @desktop-width {
+    width: 80%;
   }
 }
 

@@ -1,18 +1,31 @@
 
+.contacts {
+  @media @desktop-width {
+    position: relative;
+  }
+}
+
 .contacts__wrap {
   .container();
   box-sizing: border-box;
-  padding-left: 9.3%;
-  padding-right: 9.3%;
+  .container-padding();
 
   @media @tablet-width {
-    padding-left: 6.5%;
-    padding-right: 6.5%;
-
     &:last-child {
       padding-bottom: 55px;
     }
   }
+
+  @media @desktop-width {
+     &:last-child {
+      padding-bottom: 105px;
+    }
+  }
+
+  @media @desktop-width {
+    padding-left: 19.5%;
+  }
+
 }
 
 .contacts__title {
@@ -30,6 +43,13 @@
   @media @tablet-width {
     padding-top: 65px;
   }
+
+  @media @desktop-width {
+    width: 40%;
+    padding-right: 60%;
+    padding-top: 145px;
+    padding-bottom: 45px;
+  }
 }
 
 .contacts__informations {
@@ -40,17 +60,28 @@
     padding-bottom: 60px;
     margin-bottom: 0;
   }
+
+  @media @desktop-width {
+    width: 40%;
+    margin-right: 60%;
+  }
 }
 
-.contacts__information {
+.contacts__informations {
   color: @featured-desc;
   font-family: OpenSans, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
+  width: 260px;
+
+  @media @desktop-width {
+    padding-bottom: 80px;
+  }
 }
 
 .contacts__informations-row {
+
   @media @tablet-width {
     float: left;
     width: 44.9%;
@@ -59,6 +90,10 @@
     &:nth-child(2n) {
       margin-right: 0;
     }
+  }
+
+  @media @desktop-width {
+    float: none;
   }
 }
 
@@ -71,6 +106,10 @@
     padding-right: 9%;
     font-size: 16px;
   }
+
+  @media @desktop-width {
+    margin-bottom: 30px;
+  }
 }
 
 .contacts__information-value {
@@ -80,21 +119,39 @@
     font-size: 16px;
   }
 
+  &--email a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: @featured-desc;
+    transition: color 0.3s;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 155px;
+      height: 1px;
+      background-color: @border-email;
+      transition: background-color 0.3s;
+
+      @media @tablet-width {
+        width: 180px;
+      }
+    }
+
+    &:active::before {
+      background-color: @border-email-lighter;
+    }
+  }
+
   &--email a:hover {
     color: @border-email;
   }
 
   &--email a:active {
     color: @border-email-lighter;
-    border-color: @border-email-lighter;
-  }
-
-  &--email a {
-    display: block;
-    text-decoration: none;
-    color: @featured-desc;
-    border-bottom: 1px solid @border-email;
-    transition: color 0.3s, border-color 0.3s;
   }
 
 
@@ -106,5 +163,12 @@
 
   @media @tablet-width {
     margin-bottom: 55px;
+  }
+
+  @media @desktop-width {
+    position: absolute;
+    top: 70px;
+    right: 4.3%;
+    width: 525px;
   }
 }

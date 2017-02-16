@@ -3,13 +3,11 @@
 .about__wrap {
   .container();
   box-sizing: border-box;
-  padding-left: 9.3%;
-  padding-right: 9.3%;
+   .container-padding();
 
-  @media @tablet-width {
-    padding-left: 6.5%;
-    padding-right: 6.5%;
-  }
+   @media @desktop-width {
+     padding-left: 19.5%;
+   }
 }
 
 .about__items {
@@ -35,6 +33,14 @@
       float: right;
     }
   }
+
+  @media @desktop-width {
+    width: 40%;
+
+    &:nth-child(even) {
+      float: left;
+    }
+  }
 }
 
 .about__title {
@@ -44,13 +50,16 @@
   font-family: Verdana, Arial, sans-serif;
   font-size: 24px;
   font-weight: bold;
+  .title();
 
   @media @tablet-width {
-    font-size: 40px;
-    line-height: 50px;
     padding-top: 45px;
     padding-bottom: 45px;
     margin-bottom: 0;
+  }
+
+  @media @desktop-width {
+    padding-top: 60px;
   }
 }
 

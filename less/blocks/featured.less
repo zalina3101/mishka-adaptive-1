@@ -4,16 +4,11 @@
   .container();
   .clearfix();
   box-sizing: border-box;
-  padding-left: 9.3%;
-  padding-right: 9.3%;
+  .container-padding();
 
   @media @tablet-width {
-    padding-left: 6.5%;
-    padding-right: 6.5%;
     position: relative;
   }
-
-
 }
 
 .featured__header {
@@ -31,6 +26,7 @@
   @media @desktop-width {
     position: relative;
     padding-top: 125px;
+    padding-bottom: 50px;
   }
 }
 
@@ -78,12 +74,15 @@
   @media @desktop-width {
     position: absolute;
     top: 127px;
-    left: 0;
+    left: 4.5%;
+    width: 6.6%;
+    padding-right: 0;
   }
 }
 
 .featured__description {
   margin-top: 0;
+  margin-bottom: 0;
   color: @featured-desc;
   font-family: OpenSans, Arial, sans-serif;
   font-size: 14px;
@@ -94,9 +93,14 @@
     display: inline-block;
     vertical-align: top;
     width: 285px;
-    margin-bottom: 45px;
+    padding-bottom: 45px;
     padding-left: 3px;
-    padding-right: 7.4%;
+  }
+
+  @media @desktop-width {
+    padding-left: 16.6%;
+    padding-bottom: 55px;
+    font-size: 16px;
   }
 }
 
@@ -109,11 +113,18 @@
   font-weight: normal;
   line-height: 20px;
   border-collapse: collapse;
+  outline: none;
 
   @media @tablet-width {
-    width: 43.6%;
+    width: 290px;
     margin-bottom: 50px;
     margin-left: 3px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 105px;
+    margin-left: 16.6%;
+    font-size: 15px;
   }
 }
 
@@ -140,12 +151,23 @@
       width: 303px;
       height: 404px;
     }
+
+    @media @desktop-width {
+      width: 525px;
+      height: 636px;
+    }
   }
 
   @media @tablet-width {
     position: absolute;
     top: 155px;
     right: 6.5%;
+  }
+
+  @media @desktop-width {
+    top: 70px;
+    right: 4.3%;
+    z-index: -1;
   }
 }
 
@@ -160,11 +182,16 @@
   line-height: 24px;
 
   @media @tablet-width {
-    // float: left;
     display: block;
-    padding-left: 70px;
-    margin-left: 0;
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: 73px;
+  }
+
+  @media @desktop-width {
+    width: 160px;
+    margin-left: 0;
+    padding-left: 23%;
+    font-size: 18px;
   }
 }
