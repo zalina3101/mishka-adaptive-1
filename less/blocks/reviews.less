@@ -1,9 +1,13 @@
 @import "../mixins.less";
 
-.reviews {
+.reviews__wrap {
+  .container();
+  box-sizing: border-box;
+  .container-padding();
 
   @media @tablet-width {
     position: relative;
+    padding-bottom: 165px;
 
     &::before {
       content: "";
@@ -15,17 +19,6 @@
       height: 457px;
       background-image: url("../../img/review@1x.jpg");
     }
-  }
-}
-
-.reviews__wrap {
-  .container();
-  box-sizing: border-box;
-  .container-padding();
-
-  @media @tablet-width {
-    position: relative;
-    padding-bottom: 165px;
   }
 
   @media @desktop-width {
