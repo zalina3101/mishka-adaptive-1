@@ -1,9 +1,14 @@
 @import "../mixins.less";
 
 .about__wrap {
+  padding-top: 30px;
   .container();
   box-sizing: border-box;
    .container-padding();
+
+   @media @tablet-width {
+     padding-top: 0;
+   }
 
    @media @desktop-width {
      padding-left: 19.5%;
