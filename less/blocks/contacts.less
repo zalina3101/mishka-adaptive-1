@@ -1,13 +1,14 @@
 
 .contacts {
+  position: relative;
+
   @media @desktop-width {
-    position: relative;
+    position: static;
   }
 }
 
 .contacts__wrap {
   padding-top: 30px;
-  position: relative;
   .container();
   box-sizing: border-box;
   .container-padding();
@@ -21,15 +22,12 @@
   }
 
   @media @desktop-width {
+    position: relative;
+    padding-left: 19.5%;
      &:last-child {
       padding-bottom: 105px;
     }
   }
-
-  @media @desktop-width {
-    padding-left: 19.5%;
-  }
-
 }
 
 .contacts__title {
@@ -56,6 +54,27 @@
   }
 }
 
+.contacts__flag-icon {
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+    position: absolute;
+    top: 47px;
+    right: 6.5%;
+    width: 47px;
+    height: 81px;
+    background-image: url("../../img/contacts-flag.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media @desktop-width {
+    top: 132px;
+    left: 9.8%;
+    right: auto;
+  }
+}
+
 .contacts__informations {
   margin-bottom: 540px;
   color: @featured-desc;
@@ -73,22 +92,10 @@
   @media @desktop-width {
     width: 40%;
     margin-right: 60%;
+    margin-bottom: 0;
     padding-bottom: 70px;
   }
 }
-
-// .contacts__informations {
-//   color: @featured-desc;
-//   font-family: OpenSans, Arial, sans-serif;
-//   font-size: 14px;
-//   font-weight: normal;
-//   line-height: 30px;
-//   width: 260px;
-
-//   @media @desktop-width {
-//     padding-bottom: 70px;
-//   }
-// }
 
 .contacts__informations-row {
 
@@ -182,6 +189,7 @@
 
   @media @desktop-width {
     position: absolute;
+    left: auto;
     top: 70px;
     right: 4.3%;
     width: 525px;
