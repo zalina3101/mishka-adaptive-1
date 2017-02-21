@@ -11,10 +11,11 @@
 .page-header__logo {
   border-top: 1px solid @main-nav-border;
   border-bottom: 1px solid @main-nav-border;
+  display: flex;
 
   @media @tablet-width {
-    position: relative;
-    float: left;
+    // position: relative;
+    // float: left;
     width: 48.3%;
     border-top: none;
   }
@@ -30,15 +31,15 @@
   }
 
   picture {
-    display: block;
     height: 35px;
     padding-top: 21px;
     padding-bottom: 21px;
-    padding-left: 36.2%;
+    margin: auto;
 
     @media @tablet-width {
       height: 46px;
-      padding-left: 13.5%;
+      margin: 0;
+      margin-right: auto;
     }
 
     @media @desktop-width {

@@ -1,11 +1,53 @@
 @import "../mixins.less";
 
+.page-header__wrapper {
+
+  @media @tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
 .main-nav {
 
   position: relative;
 
-  &--closed .main-nav__items {
-    display: none;
+  @media @mobile-width-only {
+
+    &--closed .main-nav__items {
+      max-height: 0;
+      // display: none;
+    }
+
+    &--closed .main-nav__item {
+      // max-height: 0;
+      // display: none;
+    }
+
+    &--no-js .main-nav__items {
+      max-height: max-content;
+    }
+
+    &--no-js .main-nav__item {
+      // max-height: auto;
+
+      &--income {
+        display: none;
+      }
+
+      &--sale {
+        display: none;
+      }
+
+      &--delivery {
+        display: none;
+      }
+    }
+
+    &--no-js .main-nav__toggle {
+      display: none;
+    }
   }
 
   &--opened .main-nav__toggle {
@@ -41,6 +83,10 @@
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
 
+  @media @tablet-width {
+    display: none;
+  }
+
   span {
     position: absolute;
     top: 0;
@@ -66,28 +112,40 @@
 
 .main-nav__items {
   .reset-list();
+
+  @media @mobile-width-only {
+    transition: max-height 0.5s ease-out;
+    max-height: 325px;
+  }
+
+  @media @tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
 
 .main-nav__item {
 
-    a {
+  a {
+    display: block;
     box-sizing: border-box;
     width: 100%;
     padding-top: 28px;
     padding-bottom: 28px;
     padding-left: 23.75%;
-    display: inline-block;
+
     color: #000000;
     font-family: Verdana, Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
+
     text-decoration: none;
     border-bottom: 1px solid @main-nav-border;
     transition: color 0.3s;
 
     @media @tablet-width {
-      display: block;
       padding-top: 33px;
       padding-bottom: 33px;
     }
@@ -135,9 +193,9 @@
     }
 
     @media @tablet-width {
-      position: absolute;
-      top: 0;
-      left: 48.2%;
+      // position: absolute;
+      // top: 0;
+      // left: 48.2%;
       width: 10.9%;
       border-right: 1px solid @main-nav-border;
       border-left: 1px solid @main-nav-border;
@@ -185,9 +243,9 @@
     }
 
     @media @tablet-width {
-      position: absolute;
-      top: 0;
-      left: 59.1%;
+      // position: absolute;
+      // top: 0;
+      // left: 59.1%;
       width: 41%;
     }
 
@@ -281,12 +339,11 @@
     }
 
     a {
-
-      @media @desktop-width {
-        padding-top: 23px;
-        padding-bottom: 23px;
-        padding-left: 20.8%;
-        font-size: 14px;
+       @media @desktop-width {
+       padding-top: 23px;
+       padding-bottom: 23px;
+       padding-left: 20.8%;
+       font-size: 14px;
       }
     }
   }
