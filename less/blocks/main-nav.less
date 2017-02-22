@@ -1,14 +1,5 @@
 @import "../mixins.less";
 
-.page-header__wrapper {
-
-  @media @tablet-width {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-}
-
 .main-nav {
 
   position: relative;
@@ -16,13 +7,7 @@
   @media @mobile-width-only {
 
     &--closed .main-nav__items {
-      max-height: 0;
-      // display: none;
-    }
-
-    &--closed .main-nav__item {
-      // max-height: 0;
-      // display: none;
+      max-height: 80px;
     }
 
     &--no-js .main-nav__items {
@@ -30,7 +15,6 @@
     }
 
     &--no-js .main-nav__item {
-      // max-height: auto;
 
       &--income {
         display: none;
@@ -70,7 +54,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -47px;
+  top: 33px;
   right: 30px;
   cursor: pointer;
   width: 20px;
@@ -115,14 +99,13 @@
 
   @media @mobile-width-only {
     transition: max-height 0.5s ease-out;
-    max-height: 325px;
+    max-height: 450px;
   }
 
   @media @tablet-width {
     display: flex;
     flex-wrap: wrap;
   }
-
 }
 
 .main-nav__item {
@@ -130,7 +113,6 @@
   a {
     display: block;
     box-sizing: border-box;
-    width: 100%;
     padding-top: 28px;
     padding-bottom: 28px;
     padding-left: 23.75%;
@@ -159,10 +141,6 @@
     transition: fill 0.3s;
   }
 
-  @media @tablet-width {
-    float: left;
-  }
-
   &:hover {
     a {
       color: @nav-link-hover;
@@ -172,6 +150,59 @@
   &:active {
     a {
       color: @nav-link-active;
+    }
+  }
+
+  &--header-logo {
+    border-top: 1px solid @main-nav-border;
+    border-bottom: 1px solid @main-nav-border;
+    display: flex;
+
+    @media @tablet-width {
+      width: 48.3%;
+      order: -3;
+      border-top: none;
+      border-bottom: none;
+    }
+
+    @media @desktop-width {
+      order: 0;
+      width: 21.7%;
+    }
+
+    picture {
+      height: 36px;
+      padding-top: 21px;
+      padding-bottom: 21px;
+      margin: auto;
+
+      @media @tablet-width {
+        height: 46px;
+        margin: 0;
+        margin-right: auto;
+      }
+
+      @media @desktop-width {
+        height: 72px;
+        padding-top: 9px;
+        padding-bottom: 7px;
+        padding-left: 0;
+      }
+    }
+
+    img {
+      width: 86px;
+      height: 35px;
+
+      @media @tablet-width {
+        width: 113px;
+        height: 46px;
+      }
+
+      @media @desktop-width {
+        width: 149px;
+        height: 72px;
+      }
     }
   }
 
@@ -193,10 +224,8 @@
     }
 
     @media @tablet-width {
-      // position: absolute;
-      // top: 0;
-      // left: 48.2%;
       width: 10.9%;
+      order: -2;
       border-right: 1px solid @main-nav-border;
       border-left: 1px solid @main-nav-border;
     }
@@ -206,8 +235,6 @@
       left: 0;
       width: 7.1%;
       margin-left: 21.7%;
-      // border-left: 1px solid @main-nav-border;
-      border-bottom: 1px solid @main-nav-border;
     }
 
     a {
@@ -217,6 +244,7 @@
         font-size: 0;
         padding-top: 32px;
         padding-bottom: 32px;
+        border-bottom: none;
       }
 
       @media @desktop-width {
@@ -243,17 +271,14 @@
     }
 
     @media @tablet-width {
-      // position: absolute;
-      // top: 0;
-      // left: 59.1%;
-      width: 41%;
+      width: 40.5%;
+      order: -1;
     }
 
     @media @desktop-width {
       position: relative;
       left: 0;
       width: 27.4%;
-      border-bottom: 1px solid @main-nav-border;
     }
 
     a {
@@ -264,6 +289,7 @@
         padding-top: 32px;
         padding-bottom: 32px;
         padding-left: 23.75%;
+        border-bottom: none;
       }
     }
   }
@@ -271,18 +297,16 @@
   &--catalog {
 
     @media @tablet-width {
-      width: 26%;
+      width: 22.4%;
     }
 
     @media @desktop-width {
       width: 20.8%;
-      border-bottom: 1px solid @main-nav-border;
     }
 
     a {
       @media @tablet-width {
         padding: 0;
-        padding-left: 50px;
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: 14px;
@@ -301,13 +325,12 @@
   &--knitwork {
 
     @media @tablet-width {
-      width: 26%;
+      width: 23.9%;
     }
 
     @media @desktop-width {
       width: 22.6%;
       border-left: 1px solid @main-nav-border;
-      border-bottom: 1px solid @main-nav-border;
     }
 
     a {
@@ -316,7 +339,7 @@
         font-size: 14px;
         padding-top: 20px;
         padding-bottom: 20px;
-        padding-left: 18px;
+        padding-left: 17px;
         border: none;
       }
 
@@ -327,7 +350,6 @@
         padding-left: 13.4%;
       }
     }
-
   }
 
   &--income {
@@ -371,17 +393,15 @@
     display: none;
 
     @media @tablet-width {
-      float: right;
       display: block;
       padding-top: 20px;
       padding-bottom: 20px;
-      padding-right: 6.5%;
+      margin-left: auto;
       font-family: Verdana, Arial, sans-serif;
       font-size: 14px;
       line-height: 24px;
     }
   }
-
 }
 
 .main-nav__icon-search {

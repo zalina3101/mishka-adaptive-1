@@ -1,69 +1,19 @@
-@import "../mixins.less";
+
+.page-header {
+  @media @tablet-width {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 88px;
+      width: 100%;
+      height: 1px;
+      background-color: @main-nav-border;
+    }
+  }
+}
 
 .page-header__wrapper {
-
-
-  @media @tablet-width {
-    .clearfix();
-  }
+  .container-fluid();
 }
-
-.page-header__logo {
-  border-top: 1px solid @main-nav-border;
-  border-bottom: 1px solid @main-nav-border;
-  display: flex;
-
-  @media @tablet-width {
-    // position: relative;
-    // float: left;
-    width: 48.3%;
-    border-top: none;
-  }
-
-  @media @desktop-width {
-    position: absolute;
-    top: 0;
-    left: 43.4%;
-    width: 21.7%;
-    margin-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  picture {
-    height: 35px;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    margin: auto;
-
-    @media @tablet-width {
-      height: 46px;
-      margin: 0;
-      margin-right: auto;
-    }
-
-    @media @desktop-width {
-      height: 72px;
-      padding-top: 9px;
-      padding-bottom: 7px;
-      padding-left: 0;
-    }
-  }
-
-  img {
-    width: 86px;
-    height: 35px;
-
-    @media @tablet-width {
-      width: 113px;
-      height: 46px;
-    }
-
-    @media @desktop-width {
-      width: 149px;
-      height: 72px;
-    }
-  }
-}
-
-
