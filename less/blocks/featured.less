@@ -1,9 +1,9 @@
 @import "../variables.less";
 
 .featured__wrap {
-  .container();
-  .clearfix();
-  box-sizing: border-box;
+  .container-fluid();
+  // .clearfix();
+  // box-sizing: border-box;
   .container-padding();
 
   @media @tablet-width {
@@ -17,8 +17,9 @@
   font-size: 0;
 
   @media @tablet-width {
-    .clearfix();
-    width: 100%;
+    display: flex;
+    // .clearfix();
+    // width: 100%;
     padding-top: 45px;
     padding-bottom: 55px;
   }
@@ -41,9 +42,9 @@
   .title();
 
   @media @tablet-width {
-    display: inline-block;
-    vertical-align: top;
-    padding-right: 20.9%;
+    // display: inline-block;
+    // vertical-align: top;
+    // padding-right: 20.9%;
     margin-bottom: 0;
   }
 
@@ -64,11 +65,11 @@
   text-transform: uppercase;
 
   @media @tablet-width {
-    float: right;
     text-align: center;
     width: 10.1%;
+    margin-left: auto;
     padding-right: 4.1%;
-    padding-top: 13px;
+    padding-top: 12px;
   }
 
   @media @desktop-width {
