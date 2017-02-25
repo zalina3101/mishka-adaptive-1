@@ -1,54 +1,39 @@
 @import "../mixins.less";
 
 .about__wrap {
-  padding-top: 30px;
-  .container();
+  .container-fluid();
+  // .container-padding();
   box-sizing: border-box;
-   .container-padding();
+  padding-top: 30px;
 
-   @media @tablet-width {
-     padding-top: 0;
-   }
+  @media @tablet-width {
+   padding-top: 0;
+  }
 
-   @media @desktop-width {
-     padding-left: 19.5%;
-   }
+  @media @desktop-width {
+   padding-left: 175px;
+  }
 }
 
 .about__items {
   .reset-list();
-  .clearfix();
-}
-
-.about__items-wrapper {
-
-  &:last-child {
-    padding-bottom: 30px;
-  }
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media @tablet-width {
-    float: left;
-    width: 50%;
-
-    &:last-child {
-      padding-bottom: 0;
-    }
-
-    &:nth-child(even) {
-      float: right;
-    }
-  }
-
-  @media @desktop-width {
-    width: 40%;
-
-    &:nth-child(even) {
-      float: left;
-    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    padding-bottom: 25px;
   }
 }
 
 .about__title {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
   color: #000000;
@@ -58,6 +43,7 @@
   .title();
 
   @media @tablet-width {
+    width: auto;
     padding-top: 45px;
     padding-bottom: 45px;
     margin-bottom: 0;
@@ -69,7 +55,44 @@
 }
 
 .about__item {
+
   padding-bottom: 30px;
+
+  @media @tablet-width {
+    position: relative;
+    width: 50%;
+    padding-bottom: 0;
+
+    & svg {
+      position: absolute;
+      top: 0;
+      left:0;
+    }
+
+    &--eco {
+      order: 1;
+    }
+
+    &--scand {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--knit {
+      order: 2;
+    }
+
+    &--producer {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
 
   h3 {
     margin: 0;
@@ -82,24 +105,11 @@
     @media @tablet-width {
       font-size: 20px;
       padding-top: 55px;
+      padding-bottom: 50px;
     }
   }
 
-  @media @tablet-width {
-    position: relative;
-    margin-bottom: 50px;
-    padding-bottom: 0;
 
-    &:last-of-type {
-      margin-bottom: 80px;
-    }
-
-    & svg {
-      position: absolute;
-      top: 0;
-      left:0;
-    }
-  }
 
 }
 

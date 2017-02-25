@@ -1,13 +1,27 @@
 @import "../mixins.less";
 
-.reviews__wrap {
-  .container();
-  box-sizing: border-box;
-  .container-padding();
-
+.reviews {
   @media @tablet-width {
     position: relative;
+  }
+
+  @media @desktop-width {
+    position: static;
+  }
+}
+
+.reviews__wrap {
+  .container-fluid();
+  .container-padding();
+  box-sizing: border-box;
+
+  @media @tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
     padding-bottom: 165px;
+    padding-left: 0;
+    padding-right: 0;
 
     &::before {
       content: "";
@@ -22,7 +36,9 @@
   }
 
   @media @desktop-width {
-    padding-left: 19.5%;
+    position: relative;
+    padding-left: 175px;
+    padding-right: 0;
   }
 }
 
@@ -37,14 +53,15 @@
   .title();
 
   @media @tablet-width {
-    padding-top: 80px;
-    padding-bottom: 55px;
-    margin-bottom: 0;
+    order: 1;
+    padding-top: 0;
+    // padding-bottom: 55px;
+    margin-bottom: 55px;
   }
 
   @media @desktop-width {
-    padding-top: 75px;
-    padding-bottom: 50px;
+    // padding-top: 75px;
+    // padding-bottom: 50px;
   }
 }
 
@@ -54,6 +71,7 @@
 
   @media @tablet-width {
     margin-bottom: 0;
+    order: 3;
   }
 }
 
@@ -118,9 +136,14 @@
   @media @tablet-width {
     position: absolute;
     top: 310px;
-    right: 0;
+    right: 6.55%;
+    order: 4;
     width: auto;
-    padding-right: 50px;
+    // padding-right: 50px;
+  }
+
+  @media @desktop-width {
+    right: 0;
   }
 }
 

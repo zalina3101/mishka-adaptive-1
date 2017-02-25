@@ -19,7 +19,7 @@
   transition: color 0.3s, background-color 0.3s;
 
   &--featured {
-    display: block;
+    // display: block;
     box-sizing: content-box;
     width: 84px;
     margin-bottom: 35px;
@@ -29,15 +29,18 @@
     margin-right: auto;
 
     @media @tablet-width {
-      float: left;
+      // float: left;
+      align-self: flex-start;
       width: auto;
       padding-left: 100px;
       padding-right: 100px;
       margin-bottom: 55px;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     @media @desktop-width {
-      margin-left: 16.6%;
+      margin-left: 170px;
       margin-bottom: 75px;
     }
   }
@@ -53,13 +56,21 @@
     margin-right: auto;
 
     @media @tablet-width {
-      position: absolute;
-      top: 80px;
-      right: 0;
+      // position: absolute;
+      // top: 80px;
+      // right: 6.55%;
+      order: 2;
       width: auto;
-      margin-right: 50px;
+      margin-right: 0;
+      margin-bottom: 57px;
+      padding-top: 14px;
+      padding-bottom: 14px;
       padding-left: 41px;
       padding-right: 41px;
+    }
+
+    @media @desktop-width {
+      margin-bottom: 60px;
     }
   }
 
