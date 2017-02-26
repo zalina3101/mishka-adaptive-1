@@ -18,7 +18,7 @@ var marker = new google.maps.Marker({
   map: map,
   title: 'Mishka',
   icon: {
-    url: "../img/icon-map.png",
+    url: window.devicePixelRatio > 1 ? "../img/icon-map@2x.png" : "../img/icon-map.png",
     scaledSize: new google.maps.Size(67, 100)
   }
 });

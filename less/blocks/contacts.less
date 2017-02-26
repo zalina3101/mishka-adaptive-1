@@ -8,13 +8,15 @@
 }
 
 .contacts__wrap {
-  padding-top: 30px;
-  .container();
-  box-sizing: border-box;
+  .container-fluid();
   .container-padding();
+  padding-top: 30px;
+  box-sizing: border-box;
 
   @media @tablet-width {
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
 
     &:last-child {
       padding-bottom: 55px;
@@ -22,8 +24,12 @@
   }
 
   @media @desktop-width {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    padding-left: 19.5%;
+    padding-left: 175px;
+    padding-right: 0;
+
      &:last-child {
       padding-bottom: 105px;
     }
@@ -69,8 +75,8 @@
   }
 
   @media @desktop-width {
-    top: 132px;
-    left: 9.8%;
+    top: 135px;
+    left: 63px;
     right: auto;
   }
 }
@@ -188,10 +194,11 @@
   }
 
   @media @desktop-width {
+    position: static;
     position: absolute;
     left: auto;
     top: 70px;
-    right: 4.3%;
+    right: 0;
     width: 525px;
   }
 }
