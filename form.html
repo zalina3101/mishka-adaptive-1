@@ -95,153 +95,159 @@
 
 				<form class="order__form" action="#" method="post">
 
-					<fieldset class="order__type">
+					<div class="order__set  order__set--type">
 
-						<legend>Тип</legend>
+						<legend class="order__set-title">Тип</legend>
 
-						<div class="order__accessory">
+						<div class="order__set-item  order__set-item--accessory">
 
 							<input type="radio" name="order-type" id="accessory" value="accessory">
 
-							<label for="accessory">Аксессуар для интерьера</label>
+							<label class="order__item-label  order__item-label--accessory" for="accessory">Аксессуар для интерьера</label>
 
 							<span class="order__radio-controller"></span>
 
 						</div>
 
-						<div class="order__toys">
+						<div class="order__set-item">
 
 							<input type="radio" name="order-type" id="toys" value="toys">
 
-							<label for="toys">Детская игрушка</label>
+							<label class="order__item-label" for="toys">Детская игрушка</label>
 
 							<span class="order__radio-controller"></span>
 
 						</div>
 
-					</fieldset>
+					</div>
 
-					<fieldset class="order__color">
+					<div class="order__set  order__set--color">
 
-						<legend>Цвет</legend>
+						<legend class="order__set-title">Цвет</legend>
 
-						<div class="order__white">
+						<div class="order__set-item">
 
 							<input type="checkbox" name="order-color" id="order-white" value="white">
 
-							<label for="order-white">Белый</label>
+							<label class="order__item-label" for="order-white">Белый</label>
 
 							<span class="order__checkbox-controller"></span>
 
 						</div>
 
-						<div class="order__gray">
+						<div class="order__set-item">
 
 							<input type="checkbox" name="order-color" id="order-gray" value="gray">
 
-							<label for="order-gray">Серый</label>
+							<label class="order__item-label" for="order-gray">Серый</label>
 
 							<span class="order__checkbox-controller"></span>
 
 						</div>
 
-						<div class="order__tiffani">
+						<div class="order__set-item">
 
 							<input type="checkbox" name="order-color" id="order-tiffani" value="tiffani">
 
-							<label for="order-tiffani">«Тиффани»</label>
+							<label class="order__item-label" for="order-tiffani">«Тиффани»</label>
 
 							<span class="order__checkbox-controller"></span>
 
 						</div>
 
-						<div class="order__black">
+						<div class="order__set-item">
 
 							<input type="checkbox" name="order-color" id="order-black" value="black">
 
-							<label for="order-black">Черный</label>
+							<label class="order__item-label" for="order-black">Черный</label>
 
 							<span class="order__checkbox-controller"></span>
 
 						</div>
 
-						<div class="order__pink">
+						<div class="order__set-item">
 
 							<input type="checkbox" name="order-color" id="order-pink" value="pink">
 
-							<label for="order-pink">Розовый</label>
+							<label class="order__item-label" for="order-pink">Розовый</label>
 
 							<span class="order__checkbox-controller"></span>
 
 						</div>
 
-						<div class="order__orange">
+						<div class="order__set-item">
 
 							<input type="checkbox" name="order-color" id="order-orange" value="orange">
 
-							<label for="order-orange">Оранжевый</label>
+							<label class="order__item-label" for="order-orange">Оранжевый</label>
 
 							<span class="order__checkbox-controller"></span>
 
 						</div>
 
-					</fieldset>
+					</div>
 
-					<fieldset class="order__user-fio">
+					<div class="order__set  order__set--user">
 
-						<legend>ФИО</legend>
+						<legend class="order__set-title  order__set-title--user">ФИО</legend>
 
-						<div class="order__user-second-name">
+						<div class="order__name-item">
 
-							<label for="user-second-name">Фамилия:</label>
+							<label class="order__item-label  order__item-label--name" for="user-second-name">Фамилия:</label>
 
-							<input type="text" name="order__user-second-name" id="user-second-name" placeholder="Укажите фамилию" required>
-
-						</div>
-
-						<div class="order__user-name">
-
-							<label for="user-name">Имя:</label>
-
-							<input type="text" name="order__user-name" id="user-name" placeholder="Введите ваше имя" required>
+							<input class="order__text-field" type="text" name="order__user-second-name" id="user-second-name" placeholder="Укажите фамилию" required>
 
 						</div>
 
-						<div class="order__user-patronymic">
+						<div class="order__name-item">
 
-							<label for="user-patronymic">Отчество:</label>
+							<label class="order__item-label  order__item-label--name" for="user-name">Имя:</label>
 
-							<input type="text" name="order__user-patronymic" id="user-patronymic" placeholder="Отчество, если желаете">
+							<input class="order__text-field" type="text" name="order__user-name" id="user-name" placeholder="Введите ваше имя" required>
 
 						</div>
 
-					</fieldset>
+						<div class="order__name-item">
 
-					<fieldset class="order__user-tel">
+							<label class="order__item-label   order__item-label--name" for="user-patronymic">Отчество:</label>
 
-						<legend>Тел</legend>
+							<input class="order__text-field  order__text-field--patronymic" type="text" name="order__user-patronymic" id="user-patronymic" placeholder="Отчество, если желаете">
 
-						<input class="order__user-tel-input" type="tel" name="order__user-tel" placeholder="+7 ХХХ ХХ ХХ">
+						</div>
 
-					</fieldset>
+					</div>
 
-					<fieldset class="order__user-email">
+					<div class="order__set  order__set--phone">
 
-						<legend>E-mail</legend>
+						<legend class="order__set-title  order__set-title--margin-small  order__set-title--phone">Тел</legend>
 
-						<input class="order__user-email-input" type="email" name="order__user-email" placeholder="Ваш e-mail">
+						<input class="order__text-field  order__text-field--phone" type="tel" name="order__user-tel" placeholder="+7 ХХХ ХХ ХХ">
 
-					</fieldset>
+            <svg class="order__icon-phone" width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use></svg>
 
-					<fieldset class="order__more-info">
+					</div>
 
-						<legend>Доп</legend>
+					<div class="order__set  order__set--mail">
 
-						<textarea name="order__more-info" cols="30" rows="10">Опишите все ваши пожелания к заказу</textarea>
+						<legend class="order__set-title  order__set-title--margin-small  order__set-title--mail">E-mail</legend>
 
-					</fieldset>
+						<input class="order__text-field  order__text-field--email" type="email" name="order__user-email" placeholder="Ваш e-mail">
 
-					<button class="button" type="submit" title="Отправить заказ">Отправить заказ</button>
+            <svg class="order__icon-mail" width="32" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use></svg>
+
+					</div>
+
+					<div class="order__set  order__set--textarea">
+
+						<legend class="order__set-title  order__set-title--additional-information">Доп</legend>
+
+						<textarea class="order__textarea" name="order__more-info" cols="30" rows="10">Опишите все ваши пожелания к заказу</textarea>
+
+					</div>
+
+					<button class="button  button--order" type="submit" title="Отправить заказ">Отправить заказ</button>
+
+          <span class="order__memo">Все поля являются обязательными</span>
 
 				</form>
 
@@ -292,8 +298,8 @@
 
   </footer>
 
-  <script src="js/svg-sptite-script.js" defer></script>
-  <script src="js/1script.js" defer></script>
+  <script src="js/svg-sptite-script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
