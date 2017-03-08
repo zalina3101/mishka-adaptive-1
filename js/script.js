@@ -8,6 +8,5 @@ navToggle.addEventListener("click", function() {
   mainNav.classList.toggle("main-nav--opened");
 });
 
-console.log("hello");
 
 

@@ -15,7 +15,10 @@ var svgstore     = require("gulp-svgstore");
 var run          = require("run-sequence");
 var del          = require("del");
 var cheerio      = require("gulp-cheerio");
-var swig         = require('gulp-swig');
+var swig         = require("gulp-swig");
+var uglify       = require("gulp-uglify");
+// var browserify   = require("browserify");
+// var pump         = require("pump");
 
 gulp.task("style", function() {
 	gulp.src("less/style.less")
@@ -73,9 +76,9 @@ gulp.task('js-watch', ['js'], function (done) {
 });
 
 gulp.task('js', function () {
-    return gulp.src('js/*js')
-        .pipe(browserify())
-        .pipe(uglify())
+    return gulp.src('js/*.js')
+        // .pipe(browserify())
+        // .pipe(uglify())
         .pipe(gulp.dest('build/js'));
 });
 

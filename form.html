@@ -91,7 +91,7 @@
 
 			<div class="order__wrap">
 
-				<p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+				<p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания!<br> Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
 
 				<form class="order__form" action="#" method="post">
 
@@ -125,65 +125,67 @@
 
 						<legend class="order__set-title">Цвет</legend>
 
-						<div class="order__set-item">
+						<!-- <div class="order__flex-container  order__flex-container--color"> -->
+              <div class="order__set-item">
 
-							<input type="checkbox" name="order-color" id="order-white" value="white">
+                <input type="checkbox" name="order-color" id="order-white" value="white">
 
-							<label class="order__item-label" for="order-white">Белый</label>
+                <label class="order__item-label" for="order-white">Белый</label>
 
-							<span class="order__checkbox-controller"></span>
+                <span class="order__checkbox-controller"></span>
 
-						</div>
+              </div>
 
-						<div class="order__set-item">
+              <div class="order__set-item">
 
-							<input type="checkbox" name="order-color" id="order-gray" value="gray">
+                <input type="checkbox" name="order-color" id="order-gray" value="gray">
 
-							<label class="order__item-label" for="order-gray">Серый</label>
+                <label class="order__item-label" for="order-gray">Серый</label>
 
-							<span class="order__checkbox-controller"></span>
+                <span class="order__checkbox-controller"></span>
 
-						</div>
+              </div>
 
-						<div class="order__set-item">
+              <div class="order__set-item">
 
-							<input type="checkbox" name="order-color" id="order-tiffani" value="tiffani">
+                <input type="checkbox" name="order-color" id="order-tiffani" value="tiffani">
 
-							<label class="order__item-label" for="order-tiffani">«Тиффани»</label>
+                <label class="order__item-label" for="order-tiffani">«Тиффани»</label>
 
-							<span class="order__checkbox-controller"></span>
+                <span class="order__checkbox-controller"></span>
 
-						</div>
+              </div>
 
-						<div class="order__set-item">
+              <div class="order__set-item">
 
-							<input type="checkbox" name="order-color" id="order-black" value="black">
+                <input type="checkbox" name="order-color" id="order-black" value="black">
 
-							<label class="order__item-label" for="order-black">Черный</label>
+                <label class="order__item-label" for="order-black">Черный</label>
 
-							<span class="order__checkbox-controller"></span>
+                <span class="order__checkbox-controller"></span>
 
-						</div>
+              </div>
 
-						<div class="order__set-item">
+              <div class="order__set-item">
 
-							<input type="checkbox" name="order-color" id="order-pink" value="pink">
+                <input type="checkbox" name="order-color" id="order-pink" value="pink">
 
-							<label class="order__item-label" for="order-pink">Розовый</label>
+                <label class="order__item-label" for="order-pink">Розовый</label>
 
-							<span class="order__checkbox-controller"></span>
+                <span class="order__checkbox-controller"></span>
 
-						</div>
+              </div>
 
-						<div class="order__set-item">
+              <div class="order__set-item">
 
-							<input type="checkbox" name="order-color" id="order-orange" value="orange">
+                <input type="checkbox" name="order-color" id="order-orange" value="orange">
 
-							<label class="order__item-label" for="order-orange">Оранжевый</label>
+                <label class="order__item-label" for="order-orange">Оранжевый</label>
 
-							<span class="order__checkbox-controller"></span>
+                <span class="order__checkbox-controller"></span>
 
-						</div>
+              </div>
+            <!-- </div> -->
 
 					</div>
 
@@ -203,7 +205,7 @@
 
 							<label class="order__item-label  order__item-label--name" for="user-name">Имя:</label>
 
-							<input class="order__text-field" type="text" name="order__user-name" id="user-name" placeholder="Введите ваше имя" required>
+							<input class="order__text-field  order__text-field--name" type="text" name="order__user-name" id="user-name" placeholder="Введите ваше имя" required>
 
 						</div>
 
@@ -233,7 +235,7 @@
 
 						<input class="order__text-field  order__text-field--email" type="email" name="order__user-email" placeholder="Ваш e-mail">
 
-            <svg class="order__icon-mail" width="32" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use></svg>
+            <svg class="order__icon-mail" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use></svg>
 
 					</div>
 
@@ -290,7 +292,7 @@
       <div class="page-footer__developer">
         <a class="page-footer__developer-logo" href="#">
           <b class="page-footer__developer-title">Разработано</b>
-          <svg width="27" height="34"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use></svg>
+          <svg class="page-footer__academy-logo" width="27" height="34"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use></svg>
           htmlAcademy
         </a>
       </div>
