@@ -16,7 +16,7 @@ var run          = require("run-sequence");
 var del          = require("del");
 var cheerio      = require("gulp-cheerio");
 var swig         = require("gulp-swig");
-var uglify       = require("gulp-uglify");
+// var uglify       = require("gulp-uglify");
 // var browserify   = require("browserify");
 // var pump         = require("pump");
 
