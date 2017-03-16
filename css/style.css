@@ -261,7 +261,7 @@
   width: 101px;
   height: 77px;
   font-size: 0;
-  background-image: url("../../img/video-button.svg");
+  background-image: url("../img/video-button.svg");
   background-repeat: no-repeat;
   transition: transform, 0.3s;
 }
@@ -803,7 +803,7 @@
   margin-left: -9px;
   width: 22px;
   height: 17px;
-  background-image: url("../../img/checkbox-icon.svg");
+  background-image: url("../img/checkbox-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transform: scale(0);
@@ -929,7 +929,7 @@
 }
 .main-header__background {
   box-sizing: border-box;
-  background: url("../../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
   background-size: 575px 373px;
   height: 300px;
   padding-top: 88px;
@@ -1132,7 +1132,7 @@
   margin-top: 0;
   margin-bottom: 0;
   height: 6px;
-  background-image: url("../../img/bg-zigzag-line.svg");
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
   border: none;
@@ -1681,7 +1681,7 @@ img {
     content: "";
     height: 25px;
     width: 100%;
-    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: auto 25px;
   }
@@ -1780,7 +1780,7 @@ img {
     right: 6.5%;
     width: 47px;
     height: 81px;
-    background-image: url("../../img/contacts-flag.svg");
+    background-image: url("../img/contacts-flag.svg");
     background-repeat: no-repeat;
   }
   .contacts__informations {
@@ -1981,7 +1981,7 @@ img {
     content: "";
     height: 25px;
     width: 100%;
-    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: auto 25px;
   }
@@ -2273,12 +2273,12 @@ img {
     content: "";
     height: 25px;
     width: 100%;
-    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: auto 25px;
   }
   .main-header__background {
-    background-image: url("../../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 50% -64px;
     background-size: 1150px 746px;
     height: 565px;
@@ -2350,7 +2350,7 @@ img {
     left: 0;
     width: 350px;
     height: 457px;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
   }
   .reviews__title {
     font-size: 40px;
@@ -2420,12 +2420,12 @@ img {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 1.5dppx), (min-width: 768px) and (min-resolution: 144dpi) {
   .main-header__background {
-    background-image: url("../../img/hero-desktop@2x.jpg");
+    background-image: url("../img/hero-desktop@2x.jpg");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .reviews__wrap::before {
-    background-image: url("../../img/review@2x.jpg");
+    background-image: url("../img/review@2x.jpg");
   }
 }
 @media (min-width: 1150px) {
@@ -2986,6 +2986,6 @@ img {
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx), (max-width: 767px) and (min-resolution: 144dpi) {
   .main-header__background {
-    background-image: url("../../img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
