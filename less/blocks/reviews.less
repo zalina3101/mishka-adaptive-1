@@ -13,6 +13,7 @@
 .reviews__wrap {
   .container-fluid();
   .container-padding();
+  overflow: hidden;
   box-sizing: border-box;
 
   @media @tablet-width {
@@ -71,17 +72,24 @@
 
 .reviews__list {
   .reset-list();
+  width: 323.1%;
+  display: flex;
   margin-bottom: 35px;
 
   @media @tablet-width {
     margin-bottom: 0;
     order: 3;
+    flex-shrink: 0;
   }
 }
 
 .reviews__item {
-  &:not(:first-child) {
-    display: none;
+  // box-sizing: border-box;
+  width: 33.33%;
+  margin-right: 3.57%;
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
