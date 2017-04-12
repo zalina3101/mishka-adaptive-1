@@ -75,6 +75,7 @@
   width: 323.1%;
   display: flex;
   margin-bottom: 35px;
+  transition: transform 0.5s;
 
   @media @tablet-width {
     margin-bottom: 0;
@@ -246,6 +247,21 @@
     @media @tablet-width {
       left: 21px;
     }
+  }
+
+  &--disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  &--disabled:hover::before {
+    background-color: @arrow-color;
+    // opacity: 0.3;
+  }
+
+  &--disabled:hover::after {
+    border-color: @arrow-color;
+    // opacity: 0.3;
   }
 }
 
